@@ -1,0 +1,58 @@
+@font-face	{
+	src: url(../fonts/9202.otf);
+	font-family: "Helvetica";	
+	}
+.page {
+	width: 1440px;
+	height: 2427px;
+	background: #FFFFFF;
+	font-family: "Helvetica", sans-serif;
+}
+.header, .footer {
+	width: 1440px;
+	height: 200px;
+	background-color: #E5E000;	
+	font-size: 50px;
+	line-height: 200px;
+	color: #FFFFFF;
+}
+.image {
+	width: 1440px;
+	height: 1080px;
+}
+.links {
+	width: 1440px;
+	height: 100px;
+	background-color: #E5E000;
+	line-height: 100px;
+	text-transform: uppercase;
+}
+a {	
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 28.75px;
+	color: #FFFFFF;	
+	text-decoration: none;		
+}
+h2, p {	
+	font-style: normal;		
+	font-size: 50px;
+	line-height: 57,5px;	
+}
+h2	{
+	font-weight: 700;
+}
+p {
+	font-weight: 300;
+	text-align: justify;
+	text-indent: 50px;
+}
+.copyright {
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: 77px 80px;
+	text-align: right;	
+	font-size: 50px;
+	line-height: 57,5px;
+}
