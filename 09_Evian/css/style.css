@@ -1,0 +1,126 @@
+.page {
+	background-color: #FFFFFF;
+	font-family: "Arial", sans-serif;
+	font-weight: 400;
+	font-style: normal;	
+}
+.header {	
+	background-color: #FFFFFF;	
+	height: 140px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+.brand {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 50px;	
+	font-size: 50px;
+	color: #E50043;
+	line-height: 47.5px;
+}
+.links-all {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 50px;	
+}
+.link {
+	margin: 25px;	
+	font-size: 50px;		
+}
+a {
+	text-decoration: none;	
+	color: #E50043;
+}
+.hero {	
+	margin-top: 140px;
+	height: 950px;
+	display: flex;
+	background-image: url(../img/evian_origins_logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center;
+}
+.hero-text {
+	margin: auto;	
+	font-size: 100px;
+	color: #E50043;
+}
+.info {
+	display: flex;
+	margin-top: 150px;	
+}
+.text-info {
+	margin: auto;
+	width: 1040px;
+	height: 280px;
+	padding: 24px;	
+	border: 3px solid #F8BFC7;
+	box-sizing: border-box;
+	border-radius: 20px;	
+	font-size: 25px;	
+	line-height: 28.75px;	
+	letter-spacing: 1.2px;
+}
+.goods-description {
+	display: flex;
+	justify-content: center;	
+	margin-top: 150px;	
+}
+.products {
+	display: flex;
+	justify-content: space-around;
+	width: 1040px;
+}
+.description {	
+	text-align: center;
+	margin-top: 48px;	
+	font-size: 25px;	
+	line-height: 28.75px;
+}
+.picture-ingredients {
+	display: flex;
+	margin-top: 156px;
+}
+.contenttext {
+	margin: auto;
+	display: flex;	
+	justify-content: space-around;	
+	font-size: 0px;
+	border: 3px solid #F8BFC7;
+	box-sizing: border-box;
+	border-radius: 20px;
+	width: 1040px;	
+	display: flex;	
+}
+.pictureglass {
+	margin: 30px 80px;
+	}
+.content {	
+	margin: 30px 30px 30px 80px;	
+	font-size: 25px;	
+	line-height: 28.75px;
+	letter-spacing: 1.2px;
+}
+.first, .second {
+	padding-bottom: 10px;
+}
+.copyrighttext{
+	font-size: 50px;
+	color: #FFFFFF;	
+	margin-left: 50px;	
+}
+.footer {
+	display: flex;
+	align-items: center;
+	margin-top: 150px;
+	height: 140px;
+	background-color: #F8BFC7;	
+}
