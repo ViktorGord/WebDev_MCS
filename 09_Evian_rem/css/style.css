@@ -1,3 +1,6 @@
+html {
+	font-size: 10px;
+}
 .page {
 	background-color: #FFFFFF;
 	font-family: "Arial", sans-serif;
@@ -6,40 +9,40 @@
 }
 .header {	
 	background-color: #FFFFFF;	
-	height: 140px;
+	height: 14rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;	
 	position: fixed;
 	width: 100%;
-	top: 0px;	
+	top: 0rem;	
 }
 .brand {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: 50px;	
-	font-size: 50px;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	margin-left: 5rem;	
+	font-size: 5rem;
 	color: #E50043;
-	line-height: 47.5px;
+	line-height: 4.75rem;
 }
 .menu {	
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 50px;
-	font-size: 0px;	
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	margin-right: 5rem;
+	font-size: 0rem;	
 }
 li {
 	display: inline-block;
-	margin: 25px;				
+	margin: 2.5rem;				
 }
 a {
 	text-decoration: none;	
 	color: #E50043;	
-	font-size: 50px;
+	font-size: 5rem;
 }
 .hero {	
-	margin-top: 140px;
-	height: 950px;
+	margin-top: 14rem;
+	height: 95rem;
 	display: flex;
 	background-image: url(../img/evian_origins_logo.png);
 	background-repeat: no-repeat;
@@ -48,75 +51,75 @@ a {
 }
 h1 {
 	margin: auto;
-	font-size: 100px;
+	font-size: 10rem;
 	color: #E50043;
 }
 .info {	
-	margin-top: 150px;	
+	margin-top: 15rem;	
 }
 .text-info {
 	margin: auto;
-	width: 1040px;	
-	padding: 24px;	
-	border: 3px solid #F8BFC7;
+	width: 104rem;	
+	padding: 2.4rem;	
+	border: 0.3rem solid #F8BFC7;
 	box-sizing: border-box;
-	border-radius: 20px;	
-	font-size: 25px;	
-	line-height: 28.75px;	
-	letter-spacing: 1.2px;
+	border-radius: 2rem;	
+	font-size: 2.5rem;	
+	line-height: 2.87rem;	
+	letter-spacing: 0.12rem;
 }
 .goods-description {
 	display: flex;
 	justify-content: center;	
-	margin-top: 150px;	
+	margin-top: 15rem;	
 }
 .products {
 	display: flex;
 	justify-content: space-around;
-	width: 1040px;
+	width: 104rem;
 }
 .description {	
 	text-align: center;
-	margin-top: 48px;	
-	font-size: 25px;	
-	line-height: 28.75px;
+	margin-top: 4.8rem;	
+	font-size: 2.5rem;	
+	line-height: 2.87rem;
 }
 .picture-ingredients {
 	display: flex;
-	margin-top: 156px;
+	margin-top: 15.6rem;
 }
 .contenttext {
 	margin: auto;
 	display: flex;	
 	justify-content: space-around;	
-	font-size: 0px;
-	border: 3px solid #F8BFC7;
+	font-size: 0rem;
+	border: 0.3rem solid #F8BFC7;
 	box-sizing: border-box;
-	border-radius: 20px;
-	width: 1040px;	
+	border-radius: 2rem;
+	width: 104rem;	
 	display: flex;	
 }
 .pictureglass {
-	margin: 30px 80px;
+	margin: 3rem 8rem;
 	}
 .content {	
-	padding: 30px 25px;	
-	font-size: 25px;	
-	line-height: 28.75px;
-	letter-spacing: 1.2px;
+	padding: 3rem 2.5rem;	
+	font-size: 2.5rem;	
+	line-height: 2.87rem;
+	letter-spacing: 0.12rem;
 }
 .first, .second {
-	padding-bottom: 25px;
+	padding-bottom: 2.5rem;
 }
 .copyrighttext{
-	font-size: 50px;
+	font-size: 5rem;
 	color: #FFFFFF;	
-	margin-left: 50px;	
+	margin-left: 5rem;	
 }
 .footer {
 	display: flex;
 	align-items: center;
-	margin-top: 150px;
-	height: 140px;
+	margin-top: 15rem;
+	height: 14rem;
 	background-color: #F8BFC7;	
 }
