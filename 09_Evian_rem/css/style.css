@@ -1,14 +1,22 @@
 html {
 	font-size: 10px;
 }
+:root {
+	--fs-headerfooter: 5rem;
+	--fs-textdesccontent: 2.5rem;
+	--marg: 5rem;
+	--color: #E50043;
+	--bgc: #FFFFFF;
+	--bordercolor: #F8BFC7;
+}
 .page {
-	background-color: #FFFFFF;
+	background-color: var(--bgc);
 	font-family: "Arial", sans-serif;
 	font-weight: 400;
 	font-style: normal;	
 }
 .header {	
-	background-color: #FFFFFF;	
+	background-color: var(--bgc);	
 	height: 14rem;
 	display: flex;
 	align-items: center;
@@ -18,17 +26,17 @@ html {
 	top: 0rem;	
 }
 .brand {
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	margin-left: 5rem;	
-	font-size: 5rem;
-	color: #E50043;
+	margin-top: var(--marg);
+	margin-bottom: var(--marg);
+	margin-left: var(--marg);	
+	font-size: var(--fs-headerfooter);
+	color: var(--color);
 	line-height: 4.75rem;
 }
 .menu {	
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	margin-right: 5rem;
+	margin-top: var(--marg);
+	margin-bottom: var(--marg);
+	margin-right: var(--marg);
 	font-size: 0rem;	
 }
 li {
@@ -37,8 +45,8 @@ li {
 }
 a {
 	text-decoration: none;	
-	color: #E50043;	
-	font-size: 5rem;
+	color: var(--color);	
+	font-size: var(--fs-headerfooter);
 }
 .hero {	
 	margin-top: 14rem;
@@ -52,7 +60,7 @@ a {
 h1 {
 	margin: auto;
 	font-size: 10rem;
-	color: #E50043;
+	color: var(--color);
 }
 .info {	
 	margin-top: 15rem;	
@@ -64,7 +72,7 @@ h1 {
 	border: 0.3rem solid #F8BFC7;
 	box-sizing: border-box;
 	border-radius: 2rem;	
-	font-size: 2.5rem;	
+	font-size: var(--fs-textdesccontent);	
 	line-height: 2.87rem;	
 	letter-spacing: 0.12rem;
 }
@@ -81,7 +89,7 @@ h1 {
 .description {	
 	text-align: center;
 	margin-top: 4.8rem;	
-	font-size: 2.5rem;	
+	font-size: var(--fs-textdesccontent);	
 	line-height: 2.87rem;
 }
 .picture-ingredients {
@@ -104,7 +112,7 @@ h1 {
 	}
 .content {	
 	padding: 3rem 2.5rem;	
-	font-size: 2.5rem;	
+	font-size: var(--fs-textdesccontent);	
 	line-height: 2.87rem;
 	letter-spacing: 0.12rem;
 }
@@ -112,9 +120,9 @@ h1 {
 	padding-bottom: 2.5rem;
 }
 .copyrighttext{
-	font-size: 5rem;
-	color: #FFFFFF;	
-	margin-left: 5rem;	
+	font-size: var(--fs-headerfooter);
+	color: var(--bgc);	
+	margin-left: var(--marg);	
 }
 .footer {
 	display: flex;
