@@ -1,0 +1,63 @@
+html {
+	font-size: 10px;
+	line-height: 10px;
+}
+body {
+	font-family: "Times New Roman", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.header, .footer {
+	font-size: 5rem;
+	line-height: 5.7rem;
+	height: 16rem;
+	background-color: #FFE138;	
+	display: flex;	
+	width: 100%;	
+}
+.title, .year {
+	margin: auto;
+}
+.citation-title {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+}
+.citation-text {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+.maincontent {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 7rem;		
+}
+.column {
+	width: calc((100% - 100px)/3);
+	border: 1px solid #000000;
+}
+.picture1 {
+	background-image: url(../img/MetaSideTable.png);	
+	height: 60rem;
+	background-size: cover;
+	background-position: center;	
+	padding-bottom: 100%;
+}
+.picture2 {
+	background-image: url(../img/ClickShelf.png);
+	height: 60rem;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 100%;
+}
+.picture3 {
+	background-image: url(../img/FloatShelf.png);
+	height: 60rem;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 100%;
+}
+.citation-cover {
+	padding: 3.3rem 3rem;
+}
