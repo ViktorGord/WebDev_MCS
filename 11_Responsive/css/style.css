@@ -1,6 +1,10 @@
+@font-face {
+	src: url(../fonts/AkayaTelivigala-Regular.ttf);
+	font-family: AkayaTelivigala-Regular;
+}
 html {
-	font-size: 10px;
-	line-height: 10px;
+	font-size: 62.5%;
+	line-height: 62.5%;
 }
 body {
 	font-family: "Times New Roman", serif;
@@ -11,15 +15,21 @@ body {
 	font-size: 5rem;
 	line-height: 5.7rem;
 	height: 16rem;
-	background-color: #FFE138;	
-	display: flex;	
-	width: 100%;	
+	background-image: linear-gradient(to top, DimGrey 30%, Grey 60%, Silver 100%);	
+	display: flex;		
 }
 .title, .year {
 	margin: auto;
 }
+.maincontent {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 7rem;		
+}
 .citation-title {
-	font-size: 2rem;
+	font-size: 
+	2rem;
 	line-height: 2.5rem;
 	font-weight: 700;
 }
@@ -27,37 +37,60 @@ body {
 	font-size: 2rem;
 	line-height: 2.5rem;
 }
-.maincontent {
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	padding: 7rem;		
-}
 .column {
-	width: calc((100% - 100px)/3);
+	max-width: calc((100% - 100px) / 3);	
 	border: 1px solid #000000;
-}
-.picture1 {
-	background-image: url(../img/MetaSideTable.png);	
-	height: 60rem;
-	background-size: cover;
-	background-position: center;	
-	padding-bottom: 100%;
-}
-.picture2 {
-	background-image: url(../img/ClickShelf.png);
-	height: 60rem;
-	background-position: center;
-	background-size: cover;
-	padding-bottom: 100%;
-}
-.picture3 {
-	background-image: url(../img/FloatShelf.png);
-	height: 60rem;
-	background-position: center;
-	background-size: cover;
-	padding-bottom: 100%;
 }
 .citation-cover {
 	padding: 3.3rem 3rem;
+}
+
+
+.picture1 {
+	background-image: url(../img/VKipelov.jpg);	
+	background-size: cover;			
+	background-position: center;
+	padding-bottom: 150%;
+}
+.picture2 {
+	background-image: url(../img/ozzi.jpg);	
+	background-size: cover;			
+	background-position: center;
+	padding-bottom: 150%;
+	}
+.picture3 {
+	background-image: url(../img/LemmyKil.jpg);	
+	background-size: cover;			
+	background-position: center;
+	padding-bottom: 150%;
+	position: relative;	
+}
+.placeholder {	
+	border: 5px solid black;
+	box-sizing: border-box;
+	position: absolute;
+	display: flex;
+	flex-direction: row-reverse;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;	
+	transition-property: opacity;
+	transition-duration: 2.5s;	
+	font-size: 2rem;
+}
+.rip {
+	text-align: center;	
+	font-family: "AkayaTelivigala-Regular";
+	font-weight: bold;
+	font-style: italic;
+	font-size: 100%;
+	line-height: 5rem;
+	letter-spacing: 0.3rem;
+}
+.picture3:hover .placeholder {
+	opacity: 1;		
 }
