@@ -1,0 +1,131 @@
+@font-face {
+	src: url(../fonts/9202.otf);
+	font-family: "Helvetica";	
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-style: 2rem;	
+	font-family: Helvetica, sans-serif;	
+}
+.header, .footer {
+	height: 9rem;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid black;
+	background-color: orange;
+	align-items: center;
+	font-size: 2rem;
+	line-height: 2.3rem;	
+}
+.footer, .link-fun a {
+	color: white;
+}
+.general, .link-fun {
+	margin-left: 5rem; 
+}
+.menu, .copyright {
+	margin-right: 5rem;
+}
+li {
+	display: inline-block;	
+}
+.second {
+	margin-left: 3rem; /*когда будет мобильный вертикальный - надо сделать 1rem*/
+	margin-right: 3rem;/*когда будет мобильный вертикальный - надо сделать 1rem*/
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.main {
+	background-image: url(../img/iron_maiden.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;	
+}
+.placeholder {
+  font-color: white;
+}
+.survey {	
+	border: 3px solid blue;
+	width: calc(30vw);
+    padding-top: 9rem;    
+}
+.questions {
+	width: 35rem;	  
+	background-color: orange;
+	border: 3px solid white;
+	box-sizing: border-box;
+	border-radius: 2rem;	
+	padding: 3rem;
+	font-size: 2rem;
+	line-height: 2.3rem;
+	color: white;	
+  	display: flex;
+    margin: auto;
+}
+fieldset {
+	border: none;
+}
+input[name="button"] {
+	width: 20rem;
+	background-color: rosybrown;
+	border: 3px solid white;
+	box-sizing: border-box;
+	border-radius: 2rem;
+	color: white;
+	margin: auto;
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	cursor: pointer;
+}
+label, input {
+  display: block;
+  line-height: 2.3rem;
+  padding: 0.5rem;
+  color: white;  
+}
+select {
+  height: 2.3rem;
+  color: white;  
+}
+input[type="text"], input[type="e-mail"], select {
+  width: 100%;
+  background-color: orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid white;  
+} 
+input[type="radio"] {
+	display: inline-block;
+	vertical-align: middle;	
+}
+span {
+	font-size: 1.3rem;
+	line-height: 2.3rem;
+}
+input[name="song"] {
+	margin: 0.5rem;
+}
+.message {
+	font-size: 5rem;
+	line-height: 5.75rem;
+	color: white;
+	font-weight: 700;
+	margin: auto;
+	border: 2px solid yellow;
+	padding-top: 11rem;
+	padding-bottom: 11rem;
+	text-align: center;
+}

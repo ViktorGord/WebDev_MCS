@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Form</title>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta charset="utf-8">
+	<meta description="Form test">
+	<meta keywords="Form">
+	<!--<link rel="stylesheet" href="css/reset.css">*/-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="general">
+				<ul>
+					<li><a href="#">НА ГЛАВНУЮ</a></li>
+					<li class="second"><a href="https://www.ironmaiden.com/the-band" target="blank">О ГРУППЕ</a></li>
+					<li><a href="https://www.ironmaiden.com/tours/legacy-of-the-beast-tour-2021-2021" target="blank">КОНЦЕРТЫ</a></li>
+				</ul>
+			</nav>
+			<nav class="menu">МЕНЮ</nav>
+		</header>
+		<main class="main">			
+			<section class="survey">				
+				<div class="questions">
+					<form>
+					<fieldset>
+						<label for="fio">Имя</label>
+						<input type="text" name="fio" placeholder="Имя">
+						
+						<label for="album">Ваш любимый альбом</label>
+							<select name="album">								
+								<option value="Nochoise">-</option>
+								<option value="Fear">Fear of the dark</option>
+								<option value="Powerslave">Powerslave</option>
+								<option value="Somewhere">Somewhere in time</option>
+								<option value="Virtual">Virtual XI</option>
+								<option value="Bravenew">Brave new world</option>
+							</select>
+
+						<label for="song">Вам нравятся все песни?</label>
+						<input type="radio" name="song" value="Да"><span>Да</span>
+						<input type="radio" name="song" value="Нет"><span>Нет</span>
+
+						<label for="e-mail">Оставьте Ваш e-mail</label>
+						<input type="e-mail" placeholder="e-mail">
+					</fieldset>	
+				</div>	
+					<fieldset>						
+						<input type="submit" name="button" value="Отправить">
+					</fieldset>
+				</form>	
+			</section>
+			
+			<section class="message">ОcТАВЬТЕ ВАШ ОТЗЫВ ОБ АЛЬБОМЕ</section>
+		</main>
+		<footer class="footer">
+			<div class="link-fun"><a href="https://www.ironmaiden.com/" target="blank">ОФИЦИАЛЬНЫЙ САЙТ ГРУППЫ</a></div>
+			<div class="copyright">&copy 2021</div>
+		</footer>		
+	</div>
+</body>
+</html>
