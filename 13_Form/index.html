@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<title>Form</title>
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<meta description="Form test">
 	<meta keywords="Form">
@@ -12,19 +12,19 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<nav class="general">
+			<nav class="general-nav">
 				<ul>
 					<li><a href="#">НА ГЛАВНУЮ</a></li>
 					<li class="second"><a href="https://www.ironmaiden.com/the-band" target="blank">О ГРУППЕ</a></li>
 					<li><a href="https://www.ironmaiden.com/tours/legacy-of-the-beast-tour-2021-2021" target="blank">КОНЦЕРТЫ</a></li>
 				</ul>
 			</nav>
-			<nav class="menu">МЕНЮ</nav>
+			<nav class="menu"><a href="#">МЕНЮ</a></nav>
 		</header>
 		<main class="main">			
 			<section class="survey">				
 				<div class="questions">
-					<form>
+					<form action="https://formspree.io/f/meqvjwrp" method="POST">
 					<fieldset>
 						<label for="fio">Имя</label>
 						<input type="text" name="fio" placeholder="Имя">
@@ -39,21 +39,20 @@
 								<option value="Bravenew">Brave new world</option>
 							</select>
 
-						<label for="song">Вам нравятся все песни?</label>
+						<label for="song">Вам нравятся все песни альбома?</label>
 						<input type="radio" name="song" value="Да"><span>Да</span>
 						<input type="radio" name="song" value="Нет"><span>Нет</span>
 
 						<label for="e-mail">Оставьте Ваш e-mail</label>
-						<input type="e-mail" placeholder="e-mail">
+						<input type="email" name="e-mail" placeholder="e-mail">
 					</fieldset>	
 				</div>	
 					<fieldset>						
 						<input type="submit" name="button" value="Отправить">
 					</fieldset>
-				</form>	
-			</section>
-			
-			<section class="message">ОcТАВЬТЕ ВАШ ОТЗЫВ ОБ АЛЬБОМЕ</section>
+					</form>	
+			</section>			
+			<section class="message">ОСТАВЬТЕ ВАШ ОТЗЫВ ОБ АЛЬБОМЕ</section>
 		</main>
 		<footer class="footer">
 			<div class="link-fun"><a href="https://www.ironmaiden.com/" target="blank">ОФИЦИАЛЬНЫЙ САЙТ ГРУППЫ</a></div>
