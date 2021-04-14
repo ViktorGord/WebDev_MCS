@@ -1,0 +1,84 @@
+@font-face {
+	src: url(../fonts/9202.otf);
+	font-family: "Helvetica";	
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	--col_logo: rgb(70, 99, 67); /*логотип*/
+	--bgc: rgb(143, 211, 162);/*фон header footer*/
+	--col_font_nav: rgb(255, 255, 255);/*белый для шрифта*/
+	--col_font_part: rgb(223, 103, 97);/*красный для шрифта*/
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10rem;	
+	padding-right: 4rem;	
+	background-color: var(--bgc);
+	font-size: calc(3vw);
+	font-weight: bold;
+	letter-spacing: 1.2px;
+}
+.logo {
+	background-image: url(../img/logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 30rem;
+	height: 25rem;		
+} 
+.tel {
+	display: flex;
+	align-items: center;
+	color: var(--col_logo);	
+	text-align: center;	
+}
+.tel img {
+	height: 6rem;
+	width: 6rem;	
+}
+img[alt="Написать в whatsapp"] {
+	height: 45px;
+	width: 45px;	
+}
+ul {
+	font-size: calc(1.5vw);	
+}
+li {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: var(--col_font_nav);
+	padding: 1.5rem;	
+}
+.second-floor li {
+	display: block;
+	font-size: calc(1.2vw);	
+	padding-top: 1.5rem;
+}
+.retail {
+	padding-bottom: 1.5rem;
+}
+.second-floor {
+	display: block;	
+	position: absolute;
+	border-radius: 20px;
+	opacity: 0;
+	transition-property: opacity;
+	/*transition-duration: 0.5s;*/
+	transition: 0.7s ease-in-out;
+	background-color: var(--bgc);	
+}
+.plant:hover .second-floor {	
+	opacity: 1;	
+}
+
+
+
