@@ -11,6 +11,8 @@ html {
 	font-size: 62.5%;
 	--col_logo: rgb(70, 99, 67); /*логотип*/
 	--bgc: rgb(143, 211, 162);/*фон header footer*/
+	--col_h2: rgb(64, 124, 76);/*фон заголовков секций*/
+	--col_bord: 2px solid rgb(209, 208, 208);
 	--col_font_nav: rgb(255, 255, 255);/*белый для шрифта*/
 	--col_font_part: rgb(223, 103, 97);/*красный для шрифта*/
 }
@@ -51,8 +53,8 @@ img[alt="Написать в whatsapp"] {
 	height: 45px;
 	width: 45px;	
 }
-ul {
-	font-size: calc(1.5vw);	
+nav>ul {
+	font-size: calc(1.5vw);		
 }
 li {
 	display: inline-block;
@@ -70,7 +72,7 @@ a {
 .retail {
 	padding-bottom: 1.5rem;
 }
-.second-floor {
+/*.second-floor {
 	display: block;	
 	position: absolute;
 	border-radius: 20px;
@@ -81,7 +83,45 @@ a {
 }
 .plant:hover .second-floor {	
 	opacity: 1;	
+}*/
+.second-floor {
+	display: none;	
+	position: absolute;
+	border-radius: 20px;	
+	background-color: var(--bgc);	
 }
-
-
+.plant:hover .second-floor {	
+	display: block;	
+}
+section {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+.about {
+	display: flex;
+	align-items: center;
+	margin-top: 10rem;
+	padding: 1rem;
+	border-bottom: var(--col_bord);
+}
+.about img {
+	width: 4rem;
+	height: 4rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.about h2 {
+	font-size: 3rem;
+	color: var(--col_h2);	
+}
+.text-about {
+	padding: 1.5rem 3rem;
+	font-size: 2rem;	
+	text-align: justify;
+}
+.nav-website {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
