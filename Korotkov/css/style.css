@@ -9,7 +9,7 @@
 }
 html {
 	font-size: 62.5%;
-	--col_logo: rgb(70, 99, 67); /*логотип*/
+	--col_logo: rgb(70, 99, 67); /*логотип + фон заголовков секций на зел. фоне*/
 	--bgc: rgb(143, 211, 162);/*фон header footer*/
 	--col_h2: rgb(64, 124, 76);/*фон заголовков секций*/
 	--col_bord: 2px solid rgb(209, 208, 208);
@@ -87,7 +87,7 @@ a {
 .second-floor {
 	display: none;	
 	position: absolute;
-	border-radius: 20px;	
+	border-radius: 2rem;	
 	background-color: var(--bgc);	
 }
 .plant:hover .second-floor {	
@@ -119,9 +119,51 @@ section {
 	font-size: 2rem;	
 	text-align: justify;
 }
-.nav-website {
+.nav-website, .logo-flower {
+	display: flex;	
+	justify-content: center;
+	padding: 3rem;	
+}
+.nav-block {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	border: var(--col_bord);
+	border-radius: 2rem;
+	width: 23rem;
+	height: 26rem;
+	margin-bottom: 3rem;
+	
+} 
+.title {
+	background-color: var(--bgc);
+	border-radius: 2rem;
+	padding: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--col_logo);
 }
+.pic {
+	margin: auto;			
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 7rem;
+	height: 12rem;
+}
+.pic.plant {
+	background-image: url(../img/planticon.png);
+}
+.pic.photo {
+	background-image: url(../img/photo.png);
+}
+.pic.flower {
+	background-image: url(../img/arrows.png);
+}
+.pic.service {
+	background-image: url(../img/service.png);
+}
+.pic.contacts {
+	background-image: url(../img/tel.png);
+}
+
+
 
