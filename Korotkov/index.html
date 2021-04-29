@@ -12,17 +12,17 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<div class="logo"></div>
+			<div class="logo" id="company"></div>
 			<nav>				
 				<ul>
 					<li><a href="#">О КОМПАНИИ</a></li><!--не забудь привязать якоря-->
 					<li class="plant"><a href="#">РАСТЕНИЯ</a><!--не забудь привязать якоря-->
 						<ul class="second-floor">
 							<li><a href="#">ОПТОВИКАМ</a></li>
-							<li class="retail"><a href="#">РОЗНИЦА</a></li>
+							<li class="retail-link"><a href="#">РОЗНИЦА</a></li>
 						</ul>
 					</li>
-					<li><a href="#">УСЛУГИ</a></li><!--не забудь привязать якоря-->
+					<li><a href="#serv">УСЛУГИ</a></li><!--не забудь привязать якоря-->
 					<li><a href="#">ФОТО</a></li><!--не забудь привязать якоря-->
 					<li><a href="#">КОНТАКТЫ</a></li><!--не забудь привязать якоря-->
 				</ul>
@@ -37,7 +37,7 @@
 			<section> <!--Часть "О компании - трактор, заголовок, текст о компании"-->
 				<div class="about">
 					<img src="img/tractor.png" alt="tractor">
-					<h2>О компании</h2>				
+					<h2 id="company">О компании</h2>				
 				</div>
 				<div class="text-about">
 					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Consequatur sint impedit modi adipisci tempora sit earum esse totam, eaque, minus nihil voluptatibus quod autem praesentium debitis dolor aut, odit amet?</p><br />
@@ -78,7 +78,7 @@
 					</div>
 					<section class="growing-blocks">	
 							<div class="nav-block growing">
-								<div class="title block"><h3>Черенки укорененные в кассетах</h3></div>
+								<div class="title block"><h3>Черенки укорененные<br/> в кассетах</h3></div>
 									<h4>плодовые</h4>
 								<div class="pic growing"></div>
 									<h4>декоративные</h4>
@@ -93,17 +93,53 @@
 								<div class="title block"><h3>Травянистые многолетние в кассетах</h3></div>
 								<div class="pic grass"></div>
 							</div>
-
-					</section>	
-				
+					</section>				
+			</section>
+			
+			<section><!--Часть "Растения для розницы-->
+				<div class="retail">
+						<img src="img/retail.png" alt="retail">
+						<h2>Растения <span class="accent">для розницы</span></h2>
+					</div>			
+				<section class="retail-blocks">
+				<div class="nav-block retail">
+							<div class="title block"><h3>Черенки укорененные<br/> в кассетах</h3></div>
+								<h4>плодовые</h4>
+							<div class="pic retail"></div>
+								<h4>декоративные</h4>
+						</div>				
+				<div class="nav-block retail second">
+							<div class="title block"><h3>Растения под индивидуальный заказ</h3></div>					
+							<div class="pic individual"></div>					
+						</div>
+				</section>			
 			</section>
 
-			<!--<div class="nav-block">
-							<div class="title"><h3><a href=""></a></h3></div>
-							<div class="pic"></div>
-						</div>
-						<div></div>-->
-
+			<section><!--Часть "Благоустройство вашего сада-->
+				<div class="services">
+						<img src="img/service.png" alt="service">
+						<h2 id="serv">Благоустройство <span class="accent">Вашего сада</span></h2>
+				</div>
+				<section class="services-blocks">
+					<div class="nav-block services">
+								<div class="title block"><h3>Обрезка<br/>плодовых деревьев</h3></div>
+								<div class="pic trees"></div>
+					</div>
+					<div class="nav-block services">
+								<div class="title block"><h3>Озеленение и<br/>посадка</h3></div>
+								<div class="pic landscaping"></div>
+					</div>
+					<div class="nav-block services">
+								<div class="title block third"><h3>Помощь в<br/>благоустройстве<br/>новых участков</h3></div>
+								<div class="pic plot"></div>
+					</div>
+					<div class="nav-block services">
+								<div class="title block fourth"><h3>Обработка от<br/>болезней и<br/>вредителей</h3></div>
+								<div class="pic pests"></div>
+					</div>
+				</section>
+			</section>
+			
 
 			
 		</main>
