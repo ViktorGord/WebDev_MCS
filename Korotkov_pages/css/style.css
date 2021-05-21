@@ -16,54 +16,46 @@ html {
 	--col_font_nav: rgb(255, 255, 255);/*белый для шрифта*/
 	--col_font_part: rgb(243, 193, 64);/*красный для шрифта*/	
 }
-header {
+header, footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 10rem;	
-	padding-right: 4rem;	
+	height: 10rem;
+	padding-right: 4rem;
+	padding-left: 2rem;
 	background-color: var(--bgc);
 	font-size: calc(3vw);
 	font-weight: bold;
 	letter-spacing: 1.2px;
+	color: var(--col_font_nav);
 }
-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;		
-	width: 100%;
-	height: 10rem;	
-	padding-right: 4rem;
-	padding-left: 2rem;
-	background-color: var(--bgc);
-	font-size: calc(1.5vw);
-	font-weight: bold;
-	letter-spacing: 1.2px;
-	color: var(--col_font_nav);		
+header {	
+	position: fixed;
+	top: 0;
+	left: 0;
 }
-.logo {
-	background-image: url(../img/logo.png);
+footer, nav>ul {	
+	font-size: calc(1.5vw);		
+}
+.logo, .gorwin {
 	background-position: center;
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
+} 
+.logo {
+	background-image: url(../img/logo.png);	
 	width: 30rem;
 	height: 25rem;		
 } 
 .gorwin {
-	background-image: url(../img/.png);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;		
+	background-image: url(../img/.png);		
 } 
 .whatsapp {
 	display: flex;
 	align-items: center;
-	color: var(--col_logo);	
-	text-align: center;	
+	text-align: center;
+	color: var(--col_logo);			
 }
 .tel img {
 	height: 6rem;
@@ -73,9 +65,7 @@ img[alt="Написать в whatsapp"] {
 	height: 45px;
 	width: 45px;	
 }
-nav>ul {
-	font-size: calc(1.5vw);		
-}
+
 li {
 	display: inline-block;
 }
@@ -83,9 +73,6 @@ a {
 	text-decoration: none;
 	color: var(--col_font_nav);
 	padding: 1.5rem;	
-}
-.retail-link {
-	padding-bottom: 1.5rem;
 }
 section {
 	padding-left: 1.5rem;
