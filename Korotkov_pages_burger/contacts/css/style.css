@@ -34,7 +34,7 @@ header {
 footer {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;		
+	align-items: center;	
 	width: 100%;
 	height: 10rem;	
 	padding-right: 4rem;
@@ -43,7 +43,7 @@ footer {
 	font-size: calc(1.5vw);
 	font-weight: bold;
 	letter-spacing: 1.2px;
-	color: var(--col_font_nav);		
+	color: var(--col_font_nav);	
 }
 .logo {
 	background-image: url(../img/logo.png);
@@ -70,8 +70,14 @@ footer {
 	width: 6rem;	
 }
 img[alt="Написать в whatsapp"] {
-	height: 45px;
-	width: 45px;	
+	height: 4.5rem;
+	width: 4.5rem;		
+}
+img[alt="Приехать"] {
+	height: 4.5rem;
+	width: 4.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 nav>ul {
 	font-size: calc(1.5vw);		
@@ -84,12 +90,13 @@ a {
 	color: var(--col_font_nav);
 	padding: 1.5rem;	
 }
-.retail-link {
-	padding-bottom: 1.5rem;
+a[href="https://wa.me/9037403658"], a[href="tel:+7 (903) 740 36 58"] {
+	color: black;	
 }
 section {
 	padding-left: 1.5rem;
-	padding-right: 1.5rem;		
+	padding-right: 1.5rem;
+	padding-top: 1rem;	
 }
 .about {
 	display: flex;
@@ -98,7 +105,6 @@ section {
 	padding: 1rem;
 	border-bottom: var(--col_bord);
 }
-
 .about img {
 	width: 4rem;
 	height: 4rem;
@@ -109,78 +115,30 @@ h2 {
 	font-size: 3rem;
 	color: var(--col_h2);	
 }
-.text-about {
-	padding: 1.5rem 3rem;
-	font-size: 2rem;	
-	text-align: justify;
-}
-.nav-website, .logo-arrows {
+.contact-type, .block {	
 	display: flex;	
-	justify-content: center;
-	padding: 3rem;	
+	justify-content: space-around;
+	align-items: center;
 }
-.nav-block {
-	display: flex;
+.block {	
+	display: flex;	
 	flex-direction: column;
-	border: var(--col_bord);
-	border-radius: 2rem;
-	width: 23rem;
-	height: 26rem;
-	margin-bottom: 3rem;	
-} 
-.title {
-	background-color: var(--bgc);
-	border-radius: 1.7rem;
-	padding: 2rem;
-	font-size: 2rem;
-	text-align: center;
-	color: var(--col_logo);
-	width: 100%;
+	align-items: center;
 }
-.pic {
+.pic.navig {
 	margin: auto;			
 	background-size: contain;
-	background-repeat: no-repeat;
-	width: 7rem;
-	height: 12rem;
+	background-repeat: no-repeat;	
 }
-.pic.plant {
-	background-image: url(../img/planticon.png);
+.text {
+	font-size: 2rem;	
 }
-.pic.photo {
-	background-image: url(../img/photo.png);
+.map {
+	display: flex;
 }
-.pic.arrows {
-	background-image: url(../img/arrows.png);
+.mapiskra {	
+	margin: auto;
 }
-.pic.service {
-	background-image: url(../img/service.png);
-}
-.pic.contacts {
-	background-image: url(../img/tel.png);
-}
-
-@media screen and (min-width: 600px) {
-	footer {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-	}	
-}
-@media screen and (min-width: 960px) {
-	footer {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-	}	
-}
-@media screen and (min-width: 1264px) {
-	footer {
-		position: static;
-}
-@media screen and (min-width: 1904px) {
-	footer {
-		position: static;
-	}
-}
-
+img[alt="Проезд к питомнику"] {
+	width: calc(80vw);	
+} 
