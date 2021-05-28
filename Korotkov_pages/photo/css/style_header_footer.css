@@ -1,0 +1,173 @@
+@font-face {
+	src: url(../fonts/9202.otf);
+	font-family: "Helvetica";	
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	--col_logo: rgb(70, 99, 67); /*логотип + фон заголовков секций на зел. фоне*/
+	--bgc: rgb(143, 211, 162);/*фон header footer*/
+	--col_h2: rgb(64, 124, 76);/*фон заголовков секций*/
+	--col_bord: 2px solid rgb(209, 208, 208);
+	--col_font_nav: rgb(255, 255, 255);/*белый для шрифта*/
+	--col_font_part: rgb(243, 193, 64);/*красный для шрифта*/	
+}
+header, footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10rem;
+	padding-right: 4rem;
+	padding-left: 2rem;
+	background-color: var(--bgc);
+	font-size: calc(3vw);
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	color: var(--col_font_nav);
+}
+header {	
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+footer, nav>ul {	
+	font-size: calc(1.5vw);		
+}
+.logo, .gorwin {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;	
+} 
+.logo {
+	background-image: url(../img/logo.png);	
+	width: 30rem;
+	height: 25rem;		
+} 
+.gorwin {
+	background-image: url(../img/.png);		
+} 
+.whatsapp {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: var(--col_logo);			
+}
+.tel img {
+	height: 6rem;
+	width: 6rem;	
+}
+img[alt="Написать в whatsapp"] {
+	height: 45px;
+	width: 45px;	
+}
+
+li {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: var(--col_font_nav);
+	padding: 1.5rem;	
+}
+section {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;		
+}
+.about {
+	display: flex;
+	align-items: center;
+	margin-top: 10rem;
+	padding: 1rem;
+	border-bottom: var(--col_bord);
+}
+
+.about img {
+	width: 4rem;
+	height: 4rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+h2 {
+	font-size: 3rem;
+	color: var(--col_h2);	
+}
+.text-about {
+	padding: 1.5rem 3rem;
+	font-size: 2rem;	
+	text-align: justify;
+}
+.nav-website, .logo-arrows {
+	display: flex;	
+	justify-content: center;
+	padding: 3rem;	
+}
+.nav-block {
+	display: flex;
+	flex-direction: column;
+	border: var(--col_bord);
+	border-radius: 2rem;
+	width: 23rem;
+	height: 26rem;
+	margin-bottom: 3rem;	
+} 
+.title {
+	background-color: var(--bgc);
+	border-radius: 1.7rem;
+	padding: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--col_logo);
+	width: 100%;
+}
+.pic {
+	margin: auto;			
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 7rem;
+	height: 12rem;
+}
+.pic.plant {
+	background-image: url(../img/planticon.png);
+}
+.pic.photo {
+	background-image: url(../img/photo.png);
+}
+.pic.arrows {
+	background-image: url(../img/arrows.png);
+}
+.pic.service {
+	background-image: url(../img/service.png);
+}
+.pic.contacts {
+	background-image: url(../img/tel.png);
+}
+
+@media screen and (min-width: 600px) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media screen and (min-width: 960px) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media screen and (min-width: 1264px) {
+	footer {
+		position: static;
+}
+@media screen and (min-width: 1904px) {
+	footer {
+		position: static;
+	}
+}
+

@@ -1,0 +1,163 @@
+@font-face {
+	src: url(../fonts/9202.otf);
+	font-family: "Helvetica";	
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	--col_logo: rgb(70, 99, 67); /*логотип + фон заголовков секций на зел. фоне*/
+	--bgc: rgb(143, 211, 162);/*фон header footer*/
+	--col_h2: rgb(64, 124, 76);/*фон заголовков секций*/
+	--col_bord: 0.2rem solid rgb(209, 208, 208);
+	--col_font_nav: rgb(255, 255, 255);/*белый для шрифта*/
+	--col_font_part: rgb(243, 193, 64);/*красный для шрифта*/	
+}
+header, footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10rem;
+	padding-right: 4rem;
+	padding-left: 2rem;
+	background-color: var(--bgc);
+	font-size: calc(3vw);
+	font-weight: bold;
+	letter-spacing: 0.12rem;
+	color: var(--col_font_nav);
+}
+header {	
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+footer, nav>ul, .block__title>a  {	
+	font-size: calc(1.5vw);		
+}
+.header__logo, .footer__logo {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;	
+} 
+.header__logo {
+	background-image: url(../img/logo.png);	
+	width: 30rem;
+	height: 25rem;		
+} 
+.header__whatsapp, .header__telephone  {
+	display: flex;
+	align-items: center;	
+	color: var(--col_logo);			
+}
+.header__img-tel {
+	height: 6rem;
+	width: 6rem;	
+}
+img[alt="Написать в whatsapp"] {
+	height: 4.5rem;
+	width: 4.5rem;	
+}
+img[alt="plant"] {
+	height: 7.5rem;
+	width: 7.5rem;	
+}
+.item {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: var(--col_font_nav);
+	padding: 1.5rem;
+	cursor: pointer;
+	border: 1px solid black;
+	margin: auto;	
+}
+.main__about {
+	padding-top: 10rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;			
+}
+.title {
+	display: flex;
+	align-items: center;	
+	padding: 1rem;
+	border-bottom: var(--col_bord);
+}
+.title__img {
+	width: 4rem;
+	height: 4rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+h2 {
+	font-size: 3rem;
+	color: var(--col_h2);	
+}
+.text {
+	text-align: justify;
+	padding: 1.5rem 3rem;
+	font-size: 2rem;		
+}
+.web-nav, .main__logo-arrows {
+	display: flex;	
+	justify-content: center;
+	padding: 3rem;	
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	border: var(--col_bord);
+	border-radius: 2rem;
+	width: 23rem;
+	height: 26rem;
+	margin-bottom: 3rem;
+} 
+.block__title {
+	background-color: var(--bgc);
+	border-radius: 1.7rem;
+	padding: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--col_logo);
+	width: 100%;
+}
+.block__pic {
+	margin: auto;			
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 7rem;
+	height: 12rem;
+	border: 1px solid red;
+}
+.block__pic.arrows {
+	background-image: url(../img/arrows.png);
+}
+@media screen and (min-width: 600px) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media screen and (min-width: 960px) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media screen and (min-width: 1264px) {
+	footer {
+		position: static;
+}
+@media screen and (min-width: 1904px) {
+	footer {
+		position: static;
+	}
+}
+

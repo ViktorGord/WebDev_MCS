@@ -16,57 +16,46 @@ html {
 	--col_font_nav: rgb(255, 255, 255);/*белый для шрифта*/
 	--col_font_part: rgb(243, 193, 64);/*красный для шрифта*/	
 }
-header {
+header, footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 10rem;	
-	padding-right: 4rem;	
+	height: 10rem;
+	padding-right: 4rem;
+	padding-left: 2rem;
 	background-color: var(--bgc);
 	font-size: calc(3vw);
 	font-weight: bold;
 	letter-spacing: 1.2px;
+	color: var(--col_font_nav);
 }
-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+header {	
 	position: fixed;
-	bottom: 0;
-	left: 0;	
-	width: 100%;
-	height: 10rem;	
-	padding-right: 4rem;
-	padding-left: 2rem;
-	background-color: var(--bgc);
-	font-size: calc(1.5vw);
-	font-weight: bold;
-	letter-spacing: 1.2px;
-	color: var(--col_font_nav);	
+	top: 0;
+	left: 0;
 }
-.logo {
-	background-image: url(../img/logo.png);
+footer, nav>ul {	
+	font-size: calc(1.5vw);		
+}
+.logo, .gorwin {
 	background-position: center;
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
+} 
+.logo {
+	background-image: url(../img/logo.png);	
 	width: 30rem;
 	height: 25rem;		
 } 
 .gorwin {
-	background-image: url(../img/.png);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;		
+	background-image: url(../img/.png);		
 } 
 .whatsapp {
 	display: flex;
 	align-items: center;
-	color: var(--col_logo);	
-	text-align: center;	
+	text-align: center;
+	color: var(--col_logo);			
 }
 .tel img {
 	height: 6rem;
@@ -76,9 +65,7 @@ img[alt="Написать в whatsapp"] {
 	height: 45px;
 	width: 45px;	
 }
-nav>ul {
-	font-size: calc(1.5vw);		
-}
+
 li {
 	display: inline-block;
 }
@@ -87,26 +74,19 @@ a {
 	color: var(--col_font_nav);
 	padding: 1.5rem;	
 }
-.second-floor li {
-	display: block;
-	font-size: calc(1vw);	
-	padding-top: 1.5rem;
-}
-.retail-link {
-	padding-bottom: 1.5rem;
-}
 section {
 	padding-left: 1.5rem;
-	padding-right: 1.5rem;	
+	padding-right: 1.5rem;		
 }
-.services {
+.about {
 	display: flex;
 	align-items: center;
-	margin-top: 12rem;
+	margin-top: 10rem;
 	padding: 1rem;
 	border-bottom: var(--col_bord);
 }
-.services img {
+
+.about img {
 	width: 4rem;
 	height: 4rem;
 	margin-left: 2rem;
@@ -116,13 +96,15 @@ h2 {
 	font-size: 3rem;
 	color: var(--col_h2);	
 }
-.accent {
-	color: var(--col_font_part);
-}
 .text-about {
 	padding: 1.5rem 3rem;
 	font-size: 2rem;	
 	text-align: justify;
+}
+.nav-website, .logo-arrows {
+	display: flex;	
+	justify-content: center;
+	padding: 3rem;	
 }
 .nav-block {
 	display: flex;
@@ -133,17 +115,6 @@ h2 {
 	height: 26rem;
 	margin-bottom: 3rem;	
 } 
-.services-blocks {
-	display: flex;
-	padding: 0;
-	justify-content: space-around;
-}
-.nav-block.services {
-	width: 30rem;
-	height: 40rem;
-	margin-top: 4rem;
-	padding: 0;
-}
 .title {
 	background-color: var(--bgc);
 	border-radius: 1.7rem;
@@ -153,12 +124,6 @@ h2 {
 	color: var(--col_logo);
 	width: 100%;
 }
-.title.block {
-	height: 10rem;	
-}
-.title.block.third, .title.block.fourth {
-	padding: 1rem;
-}
 .pic {
 	margin: auto;			
 	background-size: contain;
@@ -166,13 +131,43 @@ h2 {
 	width: 7rem;
 	height: 12rem;
 }
-.pic.retail {
-	width: 10rem;
-	height: 15rem;
+.pic.plant {
+	background-image: url(../img/planticon.png);
+}
+.pic.photo {
+	background-image: url(../img/photo.png);
+}
+.pic.arrows {
+	background-image: url(../img/arrows.png);
 }
 .pic.service {
 	background-image: url(../img/service.png);
 }
-.pic.trees, .pic.landscaping, .pic.plot, .pic.pests {
-	background-image: url(../img/question.png);
-} 
+.pic.contacts {
+	background-image: url(../img/tel.png);
+}
+
+@media screen and (min-width: 600px) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media screen and (min-width: 960px) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media screen and (min-width: 1264px) {
+	footer {
+		position: static;
+}
+@media screen and (min-width: 1904px) {
+	footer {
+		position: static;
+	}
+}
+
